@@ -1,0 +1,90 @@
+.hero-titulo{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+    animation: glitch-shadow 5s infinite;
+}
+
+
+
+@keyframes glitch-shadow {
+  0% { text-shadow: 2px 0 fuchsia, -2px 0 cyan; }
+  25% { text-shadow: -2px 0 fuchsia, 2px 0 cyan; }
+  50% { text-shadow: 2px 0 cyan, -2px 0 fuchsia; }
+  75% { text-shadow: -2px 0 cyan, 2px 0 fuchsia; }
+  100% { text-shadow: 2px 0 fuchsia, -2px 0 cyan; }
+}
+
+.hero-subtitulo{
+color: white;
+}
+
+.hero-fondo{
+    
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -10%;
+    width: 300px;
+    height: 540px;
+    background-color: #1C1C1C;
+    border-radius: 21px;
+    transform: rotate(30deg);
+    box-shadow: 0 8px 100px rgba(0, 255, 255, 0.5)
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 23%;
+    right: -110px;
+    bottom: 23%;
+    left: -110px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    background-image: url('../imagenes/gifBookCapture.gif');
+    background-size: cover; /* Esto asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    transform: rotate(270deg);
+  }
+  
+  .product-device-2 {
+    position: absolute;
+    right: 75%;
+    bottom: 20%;
+    width: 300px;
+    height: 540px;
+    background-color: #1C1C1C;
+    border-radius: 21px;
+    transform: rotate(30deg);
+    box-shadow: 0 5px 100px rgba(255, 0, 255, 0.425)
+  }
+  
+  .product-device-2::before {
+    position: absolute;
+    top: 23%;
+    right: -110px;
+    bottom: 23%;
+    left: -110px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    background-image: url('../imagenes/gifTradeCapture.gif');
+    background-size: cover; /* Esto asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    transform: rotate(270deg);
+    
+  }
